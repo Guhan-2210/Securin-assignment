@@ -27,62 +27,62 @@ The CVE Application is a web-based platform designed to manage and display Commo
 
 ## Logical approach
 1. Consuming CVE Information from API
--- Set up HTTP client (Axios) to communicate with NVD API
--- Create a service layer to handle API interactions
--- Transform raw API data into a structured format suitable for database storage
--- Implement robust error handling for API failures
--- Use environment variables for configuration management
--- Create a MongoDB schema to define data structure
+- Set up HTTP client (Axios) to communicate with NVD API
+- Create a service layer to handle API interactions
+- Transform raw API data into a structured format suitable for database storage
+- Implement robust error handling for API failures
+- Use environment variables for configuration management
+- Create a MongoDB schema to define data structure
    
 3. Chunked Response Handling
--- Implement pagination logic using startIndex and resultsPerPage parameters
--- Create a recursive function to fetch all pages
--- Add delay between requests to respect API rate limits
--- Track progress and handle pagination state
--- Implement retry mechanism for failed requests
+- Implement pagination logic using startIndex and resultsPerPage parameters
+- Create a recursive function to fetch all pages
+- Add delay between requests to respect API rate limits
+- Track progress and handle pagination state
+- Implement retry mechanism for failed requests
 
 4. Data Cleansing & De-duplication
--- Use upsert operations to prevent duplicates
--- Transform and normalize data before storage
--- Handle missing or invalid data with default values
+- Use upsert operations to prevent duplicates
+- Transform and normalize data before storage
+- Handle missing or invalid data with default values
 
-5. Periodic Synchronization
+6. Periodic Synchronization
 -- Implement scheduling system using node-cron
 -- Configure sync intervals through environment variables
 -- Create logging system for sync operations
    
-6. API Development for Filtering
--- Design RESTful API endpoints for each filter type:
--- **CVE ID lookup**
--- **Year-based filtering**
--- **Score range filtering**
--- **Modified date filtering**
--- Implement query optimization for MongoDB
--- Implement pagination for large result sets
+7. API Development for Filtering
+- Design RESTful API endpoints for each filter type:
+-  **CVE ID lookup**
+-  **Year-based filtering**
+-  **Score range filtering**
+-  **Modified date filtering**
+-  mplement query optimization for MongoDB
+-  mplement pagination for large result sets
 
-7. UI Visualization
---Create component hierarchy:
---Dashboard component
---Filter section
---Results table
---Pagination controls
-Implement state management for:
---Filter criteria
---Search results
---Pagination state
---Loading states
---Error handling
-Create responsive design using Tailwind CSS
-Implement client-side caching
-Add user feedback mechanisms
-Ensure accessibility compliance
+8. UI Visualization
+- Create component hierarchy:
+  Dashboard component
+  Filter section
+  Results table
+  Pagination controls
+- Implement state management for:
+  Filter criteria
+  Search results
+  Pagination state
+  Loading states
+  Error handling
+- Create responsive design using Tailwind CSS
+- Implement client-side caching
+- Add user feedback mechanisms
+- Ensure accessibility compliance
 
-8. API Documentation
---Implement Swagger/OpenAPI documentation
-Document:
---Endpoint descriptions
---Request/response formats
---Authentication requirements
+9. API Documentation
+- Implement Swagger/OpenAPI documentation
+- Document:
+  Endpoint descriptions
+  Request/response formats
+  Authentication requirements
 
 ## Installation
 
