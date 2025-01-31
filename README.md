@@ -47,9 +47,9 @@ The CVE Application is a web-based platform designed to manage and display Commo
 - Handle missing or invalid data with default values
 
 4. Periodic Synchronization
--- Implement scheduling system using node-cron
--- Configure sync intervals through environment variables
--- Create logging system for sync operations
+- Implement scheduling system using node-cron
+- Configure sync intervals through environment variables
+- Create logging system for sync operations
    
 5. API Development for Filtering
 - Design RESTful API endpoints for each filter type:
@@ -57,8 +57,8 @@ The CVE Application is a web-based platform designed to manage and display Commo
 -  **Year-based filtering**
 -  **Score range filtering**
 -  **Modified date filtering**
--  mplement query optimization for MongoDB
--  mplement pagination for large result sets
+-  Implement query optimization for MongoDB
+-  Implement pagination for large result sets
 
 6. UI Visualization
 - Create component hierarchy:
@@ -73,16 +73,14 @@ The CVE Application is a web-based platform designed to manage and display Commo
   - Loading states
   - Error handling
 - Create responsive design using Tailwind CSS
-- Implement client-side caching
-- Add user feedback mechanisms
 - Ensure accessibility compliance
 
 7. API Documentation
 - Implement Swagger/OpenAPI documentation
 - Document:
-- **Endpoint descriptions**
-- **Request/response formats**
-- **Authentication requirements**
+ - Endpoint descriptions
+ - Request/response formats
+ - Authentication requirements
 
 ## Installation
 
