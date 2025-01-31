@@ -4,6 +4,11 @@
 
 The CVE Application is a web-based platform designed to manage and display Common Vulnerabilities and Exposures (CVE) data. It consists of a frontend built with React and Vite, and a backend powered by Express and MongoDB. The application provides features such as filtering CVEs by various criteria, viewing detailed CVE information, and an API for accessing CVE data.
 
+## Output Screenshots
+![localhost_5173_cves_list (1)](https://github.com/user-attachments/assets/bdeea753-22eb-4893-8c96-7b3a1a292db1)
+![localhost_5173_cves_list (2)](https://github.com/user-attachments/assets/e17f3201-3dc8-4fb3-83d2-07a2ca88214f)
+
+
 ## Features
 
 - **Frontend**: Built with React and Vite, providing a responsive and interactive user interface.
